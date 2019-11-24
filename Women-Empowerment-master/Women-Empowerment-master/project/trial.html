@@ -3,276 +3,72 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-img.hello {
-    width:100%;
-    height:400px;
-    text-align: center;
-}
-
-h1.text{
- 
-  color: white;
-  font-size:80px; 
-  font-weight: bold;
-  margin: 0 auto;
-  padding: 20px;
-  width: 50%;
-  text-align: center;
-  position: absolute;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  mix-blend-mode: screen;
-}
-
-h1.text1{
- 
- color: white;
- font-size:80px; 
- font-weight: bold;
- margin: 0 auto;
- padding: 10px;
- width: 50%;
- text-align: center;
- position: absolute;
- top: 135%;
- left: 50%;
- transform: translate(-50%, -50%);
- mix-blend-mode: screen;
-}
-.mySlides {
-  top: 500px;
-  display:none;
-  }
-
-
-  .header {
-  padding: 40px;
-  text-align: center;
-  /*background: linear-gradient(to bottom right, #1e0227 , rgb(78, 20, 119));*/
-  background: #40245c;
-
-  color: #FFFFFF;
-  font-size:30px;
-}
-
-  .header img {
-    top:50px;
-  float: left;
-  width: 200px;
-  height: 200px;
-  background: #555;
-}
-
-
-
 body {
-  margin: 0;
-  background-color: #f1f1f1;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-img {
-  width:100%;
-  height: 500px;
-}
-#navbar {
-  background-color:#d3d3d3;
-  position: absolute;
-  top:250px;
-  width: 100%;
-  display: block;
-  
-}
-
-#navbar a {
-  float: left;
-  display: block;
+.pill-nav a {
+  display: inline-block;
   color: black;
   text-align: center;
-  padding:20px 42px 20px 42px;
+  padding: 14px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 17px;
+  border-radius: 5px;
 }
 
-#navbar a:hover {
+.pill-nav a:hover {
   background-color: #ddd;
   color: black;
 }
-.block {
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: rgb(238, 225, 225);
-}
 
-.block img{
-  margin:60px;
-  width:100px;
-  height:100px;
+.pill-nav a.active {
+  background-color: dodgerblue;
+  color: white;
 }
-
-.block h2 {
-  text-align: center;
-
+.pill-nav a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
 }
-ul.breadcrumb {
-  padding: 10px 16px;
-  list-style: none;
-  background-color: #eee;
-  text-align: center;
-
-}
-ul.breadcrumb li {
-  display: inline;
-  font-size: 18px;
-}
-ul.breadcrumb li+li:before {
-  padding: 8px;
-  color: black;
-  content: "|\00a0";
-}
-ul.breadcrumb li a {
-  color: #0275d8;
-  text-decoration: none;
-}
-ul.breadcrumb li a:hover {
-  color: #01447e;
-  text-decoration: underline;
-}
-
-  .row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-.column {
-  -ms-flex: 50%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-.dropbtn {
-  background-color:#d3d3d3;
-  color: black;
-  padding:20px 42px 20px 42px;
-  font-size: 20px;
-  border: none;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color:#d3d3d3;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px white;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  padding:20px 42px 20px 42px;
 }
 
-.dropdown-content a {
+.dropdown-content .header {
+  background: red;
+  padding: 16px;
   color: white;
-  padding: 12px 16px;
-  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: rgb(230, 225, 225);}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: white;}
 </style>
 </head>
 <body>
-    
-      
-<div class="header">
-  <img src="https://library.kissclipart.com/20181212/cke/kissclipart-women-empowerment-logo-clipart-womens-empowerment-d4c7596b0e082264.jpg" alt="logo" />
-    <h1> MINISTRY OF WOMEN & CHILD DEVELOPMENT </h1>
-      </div>
-<div id="navbar">
-        <a href="Home_Page.html">Home</a>
-        <a href="AboutUs.html">About</a>
-  <a href="STEP_Page.html">STEP</a>
-  <a href="ngo">NGO</a>
-  <div  class="dropdown">
-      <button class="dropbtn">Legislation & Policy</button>
-      <div class="dropdown-content">
-        <a href="Legislation_Women.html">Women Related Legislation </a>
-        <a href="Legislation_Child.html">Child Related Legislation</a>
-        <a href="policy.html">Policy</a>
-      </div>
-    </div>
-  <a href="Contact_Page.html">Contact</a>
-  <a href="FAQ.html">FAQ</a>
 
+<h2>How To Create a Pill Navigation Menu</h2>
+
+<div class="pill-nav">
+  
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <div class="active">
+        <a class="active" href="#home">Home
+          <i class="fa fa-caret-down"></i>
+        </a>
+        <div class="dropdown-content">
+          <div class="header">
+            <h2>Mega Menu</h2>
 </div>
 
-<h1 class="text">ABOUT US</h1>
-<img class="hello" src="https://image.shutterstock.com/image-photo/close-top-view-young-people-600w-1545677183.jpg"> 
-<div>
-        <h1 class="text1">DESCRIPTION</h1>
-        <img class="hello" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlrrhgj-neFOpnwz2-HBmTYa0u8hUSOwO9lteQOm86HtHUc7aU&s"> 
-    
-</div>
-
-
-
-<br>
-<br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>
- 
-<div class="block">
-  <h2>Associated Organisations</h2>
-    <a href="http://leagueapps.com"><img src="https://wcd.nic.in/sites/default/files/img3.jpg" alt="" /></a>
-    <a href="http://leagueapps.com"><img src="https://wcd.nic.in/sites/default/files/img6.jpg" alt="" /></a>
-</div>
-
-<div>
-    <ul class="breadcrumb">
-        <li><a href="#">Help</a></li>
-        <li><a href="#">Feedback</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">FAQs</a></li>
-        <li><a href="#">Terms and Conditions</a></li>
-      </ul>
-</div>
-]
-<div class="row"> 
-        <div class="column">
-          <img src="https://wcd.nic.in/sites/default/files/img6.jpg" style="width:50%">
-          <img src="https://wcd.nic.in/sites/default/files/img3.jpg" style="width:100%">
-          <img src="C:\Users\pcuser\Documents\Women-Empowerment-master\Women-Empowerment-master\project\IMAGE\women.png" style="width:100%">
-          <img src="https://wcd.nic.in/sites/default/files/img3.jpg" style="width:100%">
-          <img src="C:\Users\pcuser\Documents\Women-Empowerment-master\Women-Empowerment-master\project\IMAGE\women.png" style="width:100%">
-          <img src="https://wcd.nic.in/sites/default/files/img3.jpg" style="width:100%">
-        
-        </div>
-        <div class="column">
-            <img src="https://wcd.nic.in/sites/default/files/img6.jpg" style="width:100%">
-            <img src="C:\Users\pcuser\Documents\Women-Empowerment-master\Women-Empowerment-master\project\IMAGE\women.png" style="width:100%">
-            <img src="https://wcd.nic.in/sites/default/files/img6.jpg" style="width:100%">
-            <img src="https://wcd.nic.in/sites/default/files/img3.jpg" style="width:100%">
-            <img src="https://wcd.nic.in/sites/default/files/img6.jpg" style="width:100%">
-            <img src="C:\Users\pcuser\Documents\Women-Empowerment-master\Women-Empowerment-master\project\IMAGE\women.png" style="width:100%">
-            
-          </div>  
-      </div>
 </body>
-
 </html>
+
