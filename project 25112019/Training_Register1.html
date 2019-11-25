@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://images.fineartamerica.com/images-medium-large-5/2-white-marble-texture-background-with-detailed-structure-bright-and-luxurious-abstract-marble-texture-in-natural-patterns-for-design-art-work-white-stone-floor-pattern-with-high-resolution-natthanim.jpg");
+}
+
+#regForm {
+  background-color:  #f5e7d4;
+  opacity: 0.7;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 50%;
+  min-width: 300px;
+  border-radius: 75px;
+}
+
+h1 {
+  text-align: center;  
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+select {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+ 
+}
+
+button {
+  background-color: rgb(72, 15, 95);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #510c5a44;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: rgb(65, 6, 62);
+}
+</style>
+</head>
+<body>  
+        <form id="regForm" action="/action_page.php">
+          <!-- One "tab" for each step in the form: -->
+          <div class="tab"><h2><b>Family Details:</b></h2>
+            <p><input placeholder="Father Occupation" oninput="this.className = ''" name="FaOccu"></p>
+             <p><input placeholder="Father Occupation" oninput="this.className = ''" name="FaOccu"></p>
+             <p><input placeholder="Mother Name" oninput="this.className = ''" name="maname"></p>
+             <p><input placeholder="Mother Occupation" oninput="this.className = ''" name="MaOccu"></p>
+           <!--  <p><input placeholder="Spouse Name" oninput="this.className = ''" name="SpName"></p> -->
+           </div>
+
+
+</body>

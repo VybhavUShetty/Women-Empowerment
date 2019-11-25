@@ -1,0 +1,22 @@
+ <div>
+      <table>
+    <tr>
+      <td></td>
+      <td style="padding:200px">Eligibility Criteria</td>
+      <td><ul>
+        <li>The interested organizations/firms should be registered under relevant Acts/Rules</li>
+        <li>They should have their office network in the district where they apply to be the Lead NGO.</li>
+          <li>They must have a strong presence and good track of record in the district.</li>
+            <li>They should have had to experience a similar nature of projects handled in the past.</li>
+            <li>They should have at least Rs. 10 lakhs turn over per annum</li>
+            <li>They should have enough qualified and experienced staff who are capable of handling technical and managerial issues.</li>
+      </ul></td>
+    </tr>
+    </table>
+    </div>
+
+    Education
+    Technical Training
+    Embroidery
+    Kalamkari
+    Tailoring
